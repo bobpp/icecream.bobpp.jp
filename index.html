@@ -3,93 +3,20 @@
 <head>
     <meta charset="UTF-8">
 	<title>Icecream / bobpp.jp</title>
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			font-weight: normal;
-		}
+	<meta http-equiv="Content-Style-Type" content="text/css" />  
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />  
+	<meta name="format-detection" content="telephone=no" />
 
-		section, nav, article, aside, header, footer, figure, legend {display: block;}
-
-		body {
-			background-color: black;
-			margin: 0;
-			padding: 0;
-		}
-
-		header {
-			margin: 0 0 0 0;
-			padding: 10px 20px;
-			color: white;
-		}
-
-		h1 {
-			padding: 0;
-			font-size: xx-large;
-			color: gray;
-		}
-
-		section {
-			background-color: white;
-			margin: 0;
-			padding: 10px 30px;
-			font-family: serif;
-
-			border-width: 10px 0 10px 0;
-			border-style: solid;
-			border-color: orange;
-		}
-
-		h2 {
-			font-size: x-large;
-			margin-bottom: 5px;
-		}
-
-		section p {
-			margin-left: 30px;
-		}
-
-		dl, ul {
-			margin-left: 30px;
-			margin-bottom: 40px;
-		}
-
-		dt {
-			font-weight: bold;
-		}
-
-		dd:before {
-			content: "- ";
-		}
-
-		dd {
-			margin-left: 30px;
-			margin-bottom: 10px;
-		}
-
-		footer {
-			color: gray;
-			margin: auto;
-			text-align: center;
-		}
-
-		p#copyright {
-			margin: 10px 0 0 0;
-		}
-
-		a {
-			color: gray;
-		}
-
-		a:hover {
-			color: orange;
-		}
+	<!-- Style -->
+	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+		footer { text-align: right; }
 	</style>
+
+	<!-- scripts -->
 	<!--[if lt IE 9]>
-	<script src="/js/html5.js"></script>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<!-- Google Analytics -->
 	<script type="text/javascript">
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-469391-7']);
@@ -101,40 +28,67 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	})();
 	</script>
-	<!-- End of Google Analytics -->
 </head>
 <body>
-	<header>
-		<h1>Icecream :: Top</h1>
-	</header>
-	<section>
-		<h2>参加型おしゃべりUst「あいすくり〜む」</h2>
+	<div class="navbar navbar-static-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="">Icecream :: 2nd Season</a>
+				<ul class="nav">
+					<li><a href="http://www.ustream.tv/channel/prfm-icecream">Ustream</a></li>
+					<li><a href="http://twitter.com/icecream_talk">Twitter</a></li>
+					<li><a href="#">番組アンケート</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="page-header">
+			<h1>あいすくり〜む <small>みんなでおしゃべりラジオ配信</small></h1>
+		</div>
+		<div class="hero-unit">
+			<h2>2012/11/25、2nd season 始動！<br><a href="#2nd-season" class="btn btn-info">詳しくはこちら</a></h2>
+		</div>
+
+		<div class="row">
+			<div class="span4">
+				<h3 class="page-header">あいすくり〜むって</h3>
+				<p>
+					放送をみてる "わたし" が主役になる。そんな参加型おしゃべり Ustream 放送が「あいすくり〜む」です。<br>
+					この放送を見るだけでなくぜひ"参加"して、この番組を一緒に盛り上げてください！
+				</p>
+			</div>
+
+			<div class="span8">
+				<h3 class="page-header">おしゃべりへの参加方法</h3>
+				<dl>
+					<dt>準備物</dt>
+					<dd>Skype で会議通話が出来る環境 (* カメラは必要ないです / また、音声を聞くのはヘッドフォンなどをご利用の上マイクが拾わないようにご注意ください。)</dd>
+					<dd>Skype アカウント (* おしゃべり参加者全員にアカウント名がわかってしまうため、この企画に参加する用の Skype アカウントを取得されることをおすすめいたします。)</dd>
+				</dt>
+			</div>
+		</div>
+
+		<a name="2nd-season"></a>
+		<div class="page-header">
+			<h2>2nd season 開幕!</h2>
+		</div>
 		<p>
-			<span style="font-weight: bold;">第1回配信は2010/11/20 23:00〜</span><br>
-			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="480" height="296" id="utv442243"><param name="flashvars" value="autoplay=false&amp;brand=embed&amp;cid=6323404&amp;locale=ja_JP&amp;v3=1"/><param name="allowfullscreen" value="true"/><param name="allowscriptaccess" value="always"/><param name="movie" value="http://www.ustream.tv/flash/viewer.swf"/><embed flashvars="autoplay=false&amp;brand=embed&amp;cid=6323404&amp;locale=ja_JP&amp;v3=1" width="480" height="296" allowfullscreen="true" allowscriptaccess="always" id="utv442243" name="utv_n_485772" src="http://www.ustream.tv/flash/viewer.swf" type="application/x-shockwave-flash" /></object>
+			第1回、2010/11/20 から 2年。<br>
+			Perfume 初のワールドツアーである、「Perfume WORLD TOUR 1st」がシンガポール公演で完走を果たした次の日となる、11/25 に第2回を決行致します！<br>
+			<br>
+			「Perfume WORLD TOUR 1st」や、「Perfume 3rd TOUR "JPN"」など、イベントもたくさんあった今年の Perfume をコメンテーター陣と語りつくします！
 		</p>
 
-		<h2>あいすくり〜むって</h2>
-		<p>
-			放送をみてる "わたし" が主役になる。そんな参加型おしゃべり Ustream 放送が「あいすくり〜む」です。<br>
-			「"I" + intractive + stream = Icecream.」<br>
-			Skype でおしゃべりに参加できますので、この放送を見るだけでなくぜひ"参加"して、この番組を一緒に盛り上げてください！
-		</p>
-
-		<h2>おしゃべりへの参加方法</h2>
-		<dl>
-			<dt>準備物</dt>
-			<dd>Skype で会議通話が出来る環境 (* カメラは必要ないです / また、音声を聞くのはヘッドフォンなどをご利用の上マイクが拾わないようにご注意ください。)</dd>
-			<dd>Skype アカウント (* おしゃべり参加者全員にアカウント名がわかってしまうため、この企画に参加する用の Skype アカウントを取得されることをおすすめいたします。)</dd>
-
-			<dt>参加方法</dt>
-			<dd>Skype で prfm101103young_icecream アカウントにコンタクト申請を行ってください</dd>
-			<dd>配信してる人が気づけば、申請を通すので、その後会議通話に招待します</dd>
-		</dt>
-
-	</section>
+		<div style="width: 480px; margin: 0 auto;">
+			<iframe src="http://www.ustream.tv/embed/12599604" width="480" height="296" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe><br /><a href="http://www.ustream.tv/" style="padding: 2px 0px 4px; width: 480px; background: #ffffff; display: block; color: #000000; font-weight: normal; font-size: 10px; text-decoration: underline; text-align: center;" target="_blank">Streaming Live by Ustream</a>
+		</div>
+	</div>
 	<footer>
-		<p id="copyright">Copyright &copy; <a href="http://bobpp.jp/" target="_blank">BoBpp / Tadashi Matsuda</a>, All rights reserved.</p>
+		<div class="container">
+			<p id="copyright">Powered by <a href="http://bobpp.jp/" target="_blank">@BoBpp</a></p>
+		</div>
 	</footer>
 </body>
 </html>
